@@ -4,6 +4,8 @@
 
 The **Diabetes Assistant Chatbot** is a web-based application designed to empower users in managing diabetes through risk assessment, personalized meal planning, recipe search, and access to nearby specialists. Developed by **Soumin Mujumdar** and **Vidhi Binwal**, students at SIT Pune, the project leverages **Next.js** (frontend) and **Flask** (backend), integrating the **Gemini AI API** for conversational responses and the **Google Maps API** for location-based doctor searches. The application offers a responsive, user-friendly interface, enabling users to assess diabetes risk, receive tailored Indian meal plans, explore diabetes-friendly recipes, and locate specialists. Users can download **PDF reports** summarizing health insights, making it a comprehensive health-tech solution.
 
+[![Watch the video](images/startchat.png "Chatbot interface for risk assessment and queries")](https://youtu.be/CYcgXUiLCDs)
+
 ## Screenshots
 
 Below are screenshots showcasing key features of the Diabetes Assistant Chatbot:
