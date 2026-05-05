@@ -94,7 +94,7 @@ export default function DiabetesMealPlanner() {
   const [error, setError] = useState<string | null>(null)
   
   // API URL
-  const API_URL = "http://localhost:5000"
+  const API_URL = "https://diabotai-production.up.railway.app"
   
   // User ID - in a real app, this would come from authentication
   const userId = 'default_user'

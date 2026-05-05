@@ -115,7 +115,7 @@ export default function ExerciseTracker() {
   const fetchExercises = async () => {
     setLoading(true)
     try {
-      const response = await fetch('http://localhost:5000/exercises')
+      const response = await fetch('https://diabotai-production.up.railway.app/exercises')
       if (!response.ok) throw new Error('Failed to fetch exercises')
       const data = await response.json()
       setExercises(data)
@@ -130,7 +130,7 @@ export default function ExerciseTracker() {
   const fetchRecommendedExercises = async () => {
     setLoading(true)
     try {
-      const response = await fetch(`http://localhost:5000/exercises/recommend?userId=${encodeURIComponent('default_user')}`)
+      const response = await fetch(`https://diabotai-production.up.railway.app/exercises/recommend?userId=${encodeURIComponent('default_user')}`)
       if (!response.ok) throw new Error('Failed to fetch recommended exercises')
       const data = await response.json()
       setRecommendedExercises(data)
@@ -145,7 +145,7 @@ export default function ExerciseTracker() {
   const fetchUserExercises = async () => {
     setLoading(true)
     try {
-      const response = await fetch(`http://localhost:5000/user/exercises?date=${date}`)
+      const response = await fetch(`https://diabotai-production.up.railway.app/user/exercises?date=${date}`)
       if (!response.ok) throw new Error('Failed to fetch user exercises')
       const data = await response.json()
       setUserExercises(data)
@@ -169,7 +169,7 @@ export default function ExerciseTracker() {
       return
     }
     try {
-      const response = await fetch('http://localhost:5000/user/exercises', {
+      const response = await fetch('https://diabotai-production.up.railway.app/user/exercises', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ 
